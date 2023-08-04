@@ -1,59 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Music and Video Players</title>
-    <style>
-        body {
-            background-color: #cccccc;
-        }
-        .player_one {
-            display: flex;
-            flex-direction: column;
-        }
-        .player_one a {
-            color: black;
-            text-decoration: none;
-            margin: 5px;
-            display: inline-block;
-        }
-        .player_two video {
-            margin: 20px 0;
-        }
-        .player_three audio {
-            margin: 20px 0;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playlist Webpage</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <h1>Music and Video Players</h1>
-
-    <!-- Player One - Playlist of Songs (Opens in New Tab) -->
+<body style="background-color: #cccccc;">
+	<div class="heading">
+		<h1>My Playlist</h1>
+	</div>
     <div class="player_one">
-        <h2>Playlist</h2>
-        <a href="https://www.youtube.com/watch?v=kd-6aw99DpA" target="_blank">Song 1</a>
-        <a href="https://www.youtube.com/watch?v=9iIX4PBplAY" target="_blank">Song 2</a>
-        <a href="https://www.youtube.com/watch?v=IjBAgWKW12Y" target="_blank">Song 3</a>
-        <a href="https://www.youtube.com/watch?v=puKD3nkB1h4" target="_blank">Song 4</a>
-        <a href="https://www.youtube.com/watch?v=6MgsHSAcI9k" target="_blank">Song 5</a>
+<!--         <h2>Playlist</h2> -->
+        <ul>
+            <li><a href="https://www.youtube.com/watch?v=kd-6aw99DpA" target="_blank">Song 1</a></li>
+            <li><a href="https://www.youtube.com/watch?v=9iIX4PBplAY" target="_blank">Song 2</a></li>
+            <li><a href="https://www.youtube.com/watch?v=IjBAgWKW12Y" target="_blank">Song 3</a></li>
+            <li><a href="https://www.youtube.com/watch?v=puKD3nkB1h4" target="_blank">Song 4</a></li>
+            <li><a href="https://www.youtube.com/watch?v=6MgsHSAcI9k" target="_blank">Song 5</a></li>
+        </ul>
     </div>
-
-    <!-- Player Two - Video Player (Plays in Same Tab) -->
+<h2 class="Now">Now Playing...</h2>
     <div class="player_two">
-        <h2>Video Player</h2>
-        <video width="640" height="360" controls>
+<!--         <h2>Video Player</h2> -->
+        <video width="400" controls>
             <source src="https://www.w3schools.com/tags/movie.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </div>
 
-    <!-- Player Three - Audio Player (Plays in Same Tab) -->
+	
+
     <div class="player_three">
-        <h2>Audio Player</h2>
+        <h2>MP3 songs</h2>
         <audio controls>
             <source src="https://www.pagalworld.com.se/files/download/id/64630" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
     </div>
-
 </body>
 </html>
+
